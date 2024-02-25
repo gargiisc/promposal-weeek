@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be My Valentine</title>
+    <link rel="stylesheet" href="card.css" />
+</head>
+
+<body>
+    <div id="main"><b>Will you be my prom date??</b></div>
+    <button class="answerButton" onclick="location.href='thankyou.html'">
+        Yes
+    </button>
+    <button class="noButton" id="noButton">no</button>
+    <br />
+    <img id ="please" src="please.gif" alt="please" class="responsive" />
+
+    <script>
+        
+
+        const noButton = document.getElementById('noButton');
+    let left = 40;
+    noButton.addEventListener('mouseover', function () {
+        if (left == 40) {
+            left = 48;
+        } else {
+            left = 40;
+        }
+        this.style.left = left + '%';
+    });
+
+    const yesButton = document.querySelector('button[onclick*="thankyou.html"]');
+    
+    </script>
+</body>
+
+</html>

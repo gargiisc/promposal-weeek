@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank you</title>
+    <link rel="stylesheet" href="thankyou.css" />
+    
+  </head>
+  
+  <body>
+    <div id="thankyou"><b>Hehe!! Thanks...</b></div>
+
+    <img id="yeee" src="yeee.gif" alt="rizzler god" class="responsive" />
+    <br />
+    <div id="thankyou"><b>See you after </b></div>
+    <div id="countdown"></div>
+
+    <script>
+      function updateCountdown() {
+        const targetDate = new Date("2024-03-06T16:00:00");
+        const currentDate = new Date();
+        const remainingTime = targetDate - currentDate;
+        const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((remainingTime % (1000 * 60 * 60)) / 1000);
+
+        const countdownElement = document.getElementById("countdown");
+        countdownElement.innerHTML = `
+          <div class="countdown-item">${days}d</div>
+          <div class="countdown-item">${hours}h</div>
+          <div class="countdown-item">${minutes}m</div>
+          <div class="countdown-item">${seconds}s</div>
+        `;
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+    </script>
+  </body>
+</html>

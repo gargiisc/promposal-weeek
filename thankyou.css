@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Courier";
+    background-color: #94c2de;
+    color: #e6e1e1;
+  }
+  
+  #thankyou {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #yeee {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .responsive {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #clockdiv {
+    font-family: sans-serif;
+    color: #333;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .smalltext {
+    padding-top: 5px;
+    font-size: 16px;
+  }
+
+  #countdown {
+    font-size: 24px;
+    color: #e6e1e1;
+    margin-top: 20px;
+  }
+  .countdown-item {
+    display: inline-block;
+    margin-right: 5px;
+  }
